@@ -55,7 +55,9 @@ p {
     padding: 0 10.5em;
     font-size: 25px;
 }
-
+footer {
+    padding-top: 10rem;
+}
 ul {
     display: inline-flex;
     flex-direction: row;
@@ -64,8 +66,13 @@ ul {
     text-decoration: none;
     color: yellow;
     align-items: center;
-    align-content: center;
+    /* align-content: center; */
      justify-content: space-between; 
      font-size: 30px;
+     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
      
+}
+#footer-two :hover, :focus {
+    color: darkgoldenrod;
+      /* font-size: 40px;   */
 }
