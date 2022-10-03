@@ -1,5 +1,5 @@
 * {    
-     background-color: blue;
+     background-color: darkblue;
 }
 main {
     /* width: 90vh; */
@@ -13,6 +13,10 @@ main {
     padding-top: 150px;
     padding-left: 230px;
     /* margin: 200px 500px;  */
+}
+img {
+    border: 2px solid gold;
+    border-radius: 10px;
 }
 /*#sukkas {
     /* display: flex; */
