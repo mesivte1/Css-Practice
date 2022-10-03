@@ -1,5 +1,9 @@
+* {    
+     background-color: blue;
+}
 main {
     /* width: 90vh; */
+
     display: flex;
     flex-direction: column;
     columns: 4;
