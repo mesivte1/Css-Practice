@@ -1,52 +1,77 @@
-*{
+* {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: black;
+    /* background-color: #1e2352cc; */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
 h1 {
     font-size: 8.5em;
-    padding-left: 2.5rem;
+    /* padding-left: 2.5rem; */
     margin: 0;
     color: yellow;
+}
+.headback {
+    background-color: black;
 }
 h1 :hover,
 :focus {
     color: darkgoldenrod;
 }
+
 a {
     text-decoration: none;
     color: yellow;
+    background-color: rgba(0, 0, 0, 0.8);
 }
+
 nav {
-    width: 1780px;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
     display: inline-flex;
     flex-direction: row;
-    align-items: center;  
-    justify-content: space-evenly; 
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+
 }
-#nav-center{
+
+.nav {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#nav-center {
     font-size: larger;
     display: inline-flex;
     flex-direction: row;
     width: 65%;
-    padding-left: 5%;
-     justify-content: space-between; 
+    /* padding-left: 5%; */
+    justify-content: space-between;
 }
+
 #nav-center :hover {
-    text-decoration: none;
-    list-style: none;
+    /* text-decoration: none; */
+    /* list-style: none; */
     color: darkgoldenrod;
+    font-weight: 400px;
     font-size: 30px;
+}
+.main1 {
+    background-color: #152c75;
 }
 h2 {
     width: 50vh;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: goldenrod;
-   /* line-height: 10; */
-   padding: 0 4.5em;
-   justify-content: center;
-   align-content: center;
-   font-size: 90px;
+    /* line-height: 10; */
+    padding: 0 4.5em;
+    justify-content: center;
+    align-content: center;
+    font-size: 90px;
 }
+
 p {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     width: 50%;
@@ -55,24 +80,37 @@ p {
     padding: 0 10.5em;
     font-size: 25px;
 }
-footer {
-    padding-top: 10rem;
-}
+
 ul {
     display: inline-flex;
-    flex-direction: row;
-    width: 90%;
     list-style: none;
-    text-decoration: none;
     color: yellow;
-    align-items: center;
-    /* align-content: center; */
-     justify-content: space-between; 
-     font-size: 30px;
-     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-     
+    font-size: 30px;
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
-#footer-two :hover, :focus {
+
+footer {
+    display: inline-flex;
+    height: 160px;
+     width: 100%; 
+    /* padding-top: 5.5rem; */
+    background-color: black;
+
+}
+
+#footer-two {
+    display: inline-flex;
+    width: 100%;
+    background-color: black;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#footer-two :hover,
+:focus {
     color: darkgoldenrod;
-      /* font-size: 40px;   */
+    /* font-size: 40px;   */
 }

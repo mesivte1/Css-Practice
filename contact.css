@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.headback {
+    color: yellow;
+    padding-left: 40%;
+    background-color: black;
+    height: 100px;
+
+}
+h1 {
+    padding-top: 2rem;
+}
+.back1 {
+    height: 837px;
+    color: gold;
+    background-color: #152c75;
+}
+.contact {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20%;
+    
+}
+h2 {
+    
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a {
+    color: yellow;
+    font-size: 35px;
+    padding-left: 1.5rem;
+}
