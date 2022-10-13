@@ -6,15 +6,30 @@
     padding: 0;
 }
 
+body {
+    width: 100%;
+}
+
+.head {
+    background-color: #303030;
+
+}
+
+.head h2 {
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #F87431 ;
+    text-align: center;
+}
+
 h1 {
-    font-size: 8.5em;
+    font-size: 3.5rem;
     /* padding-left: 2.5rem; */
     margin: 0;
     color: yellow;
+
 }
-.headback {
-    background-color: black;
-}
+
 h1 :hover,
 :focus {
     color: darkgoldenrod;
@@ -22,8 +37,10 @@ h1 :hover,
 
 a {
     text-decoration: none;
-    color: yellow;
-    background-color: rgba(0, 0, 0, 0.8);
+    color: black;
+    background-color: white;
+    text-transform: uppercase;
+    transition: all 250ms ease-in-out;
 }
 
 nav {
@@ -34,83 +51,253 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    background-color: black;
-
+    background-color: white;
+    font-weight: 400;
+    font-size: 1.5rem;
 }
 
-.nav {
-    background-color: rgba(0, 0, 0, 0.8);
+header {
+    position: sticky;
+    top: 0px;
 }
 
-#nav-center {
-    font-size: larger;
-    display: inline-flex;
-    flex-direction: row;
-    width: 65%;
-    /* padding-left: 5%; */
-    justify-content: space-between;
+nav a {
+    border: solid 8px white;
 }
 
-#nav-center :hover {
+nav a:hover,
+:focus {
     /* text-decoration: none; */
     /* list-style: none; */
-    color: darkgoldenrod;
-    font-weight: 400px;
-    font-size: 30px;
+    color: white;
+    border: solid 8px #F87431;
+    border-radius: 35px;
+    background-color: #F87431;
+    /* font-size: 35px; */
+    /* font-weight: 400px; */
+    /* font-size: 30px; */
 }
-.main1 {
-    background-color: #152c75;
+
+#nav-right {
+    text-decoration: none;
 }
+
+.even {
+    width: 1920px;
+    height: 1000px;
+    background-size: 1920px 1080px;
+    background-repeat: no-repeat;
+    animation: slidin 50s linear infinite;
+}
+div h3 {
+    position: absolute;
+    top: 950px;
+    left: 50px;
+    width: 250px;
+    height: 175px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    word-spacing: 10px;
+    border-radius: 5px;
+    color: #F87431;
+    background-color: #303030;
+}  
+
+@keyframes slidin {
+    0% {
+        background-image: url('./even-hapina.jpg');
+    }
+    10% {
+        background-image: url('./even-hapina-1.jpg');
+    }
+    25% {
+        background-image: url('./even-hapina-2.jpg');
+    }
+    40% {
+        background-image: url('./even-hapina-3.JPG');
+    }
+    55% {
+        background-image: url('./even-hapina-4.JPG');
+    }
+    70% {
+        background-image: url('./even-hapina-5.JPG');
+    }
+    85% {
+        background-image: url('./even-hapina-6.JPG');
+    }
+    100% {
+        background-image: url('./even-hapina-7.JPG');
+    }
+}
+
 h2 {
-    width: 50vh;
+    /* width: 50vh; */
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: goldenrod;
-    /* line-height: 10; */
-    padding: 0 4.5em;
-    justify-content: center;
-    align-content: center;
-    font-size: 90px;
+    line-height: 3.5;
+    /* padding-left: 7.2rem;  */
+    /* justify-content: center; */
+    /* align-items: center; */
+    font-size: 60px;
 }
 
-p {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    width: 50%;
+.sec1 {
+    padding-left: 3.5rem;
+}
+
+section p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 40%;
+    height: 450px;
     color: goldenrod;
-    line-height: 2;
-    padding: 0 10.5em;
+    line-height: 1.5;
+    text-align: center;
+    /* text-justify: auto; */
+    font-size: 20px;
+    padding: 6rem;
+    border: 5px solid brown;
+    border-radius: 10px;
     font-size: 25px;
+    /* padding-left: 15rem; */
+    /* justify-content: center;   */
+    /* align-content: center;  */
+    align-items: center;
 }
 
-ul {
+.bottom {
+    width: 100vw;
+    height: 80px;
+    margin: 0;
+    padding: 0;
     display: inline-flex;
-    list-style: none;
-    color: yellow;
-    font-size: 30px;
-    background-color: black;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #F87431;
+    font-weight: 400;
+    font-size: 1.5rem;
 
+}
+
+.bottom a {
+    background-color: #F87431;
+}
+
+.bottom :hover {
+    color: white;
+    border: solid 8px goldenrod;
+    border-radius: 35px;
+    background-color: goldenrod;
 }
 
 footer {
-    display: inline-flex;
-    height: 160px;
-     width: 100%; 
-    /* padding-top: 5.5rem; */
-    background-color: black;
-
+    font-size: 40px;
+    color: white;
+    font-weight: 400;
+    background-color: #303030;
 }
 
-#footer-two {
+.footer {
     display: inline-flex;
-    width: 100%;
-    background-color: black;
-    justify-content: space-around;
     align-items: center;
+    width: 100%;
+    height: 250px;
+}
+
+footer a {
+    background-color: #303030;
 
 }
 
-#footer-two :hover,
+footer h2 {
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 500px;
+}
+
+#fb:hover,
 :focus {
-    color: darkgoldenrod;
-    /* font-size: 40px;   */
+    transform: translateY(-20px);
+
+}
+
+#tw:hover,
+:focus {
+    transform: translateY(-10px);
+
+}
+
+#ig:hover,
+:focus {
+    transform: translateY(-10px);
+
+}
+
+#yt:hover,
+:focus {
+    transform: translateY(-10px);
+
+}
+
+a img {
+    margin: 15px 15px;
+}
+
+#follow {
+    display: inline-flex;
+    padding-right: 700px;
+}
+
+.copy {
+    width: 100%;
+    background-color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    word-spacing: 5px;
+}
+
+.copy img {
+    margin: 10px 10px;
+    width: 25px;
+    height: 25px;
+}
+
+#copyright {
+    font-size: 15px;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    color: #6E6E73;
+}
+
+.footer2 {
+    display: inline-flex;
+    list-style: none;
+    height: 200px;
+    width: 100%;
+    padding-left: 700px;
+}
+
+.footer2 li a {
+    margin: 5px 20px;
+    font-size: 20px;
+    color: white;
+    border: solid 8px #303030;
+    transition: all 250ms ease-in-out;
+}
+
+.footer2 li a:hover {
+    color: white;
+    border: solid 8px goldenrod;
+    border-radius: 35px;
+    background-color: goldenrod;
+}
+
+hr {
+    margin-left: 200px;
+    opacity: 0.3;
+    justify-content: center;
 }
