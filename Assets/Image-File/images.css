@@ -1,0 +1,232 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #303030;
+}
+nav {
+    width: 100%;
+    height: 75px;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    font-weight: 500;
+    font-size: 1.5rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+}
+
+nav a {
+    border: solid 8px white;
+}
+
+nav a:hover,
+:focus {
+    /* text-decoration: none; */
+    /* list-style: none; */
+    color: white;
+    border: solid 8px #F87431;
+    border-radius: 35px;
+    background-color: #F87431;
+    /* font-size: 35px; */
+    /* font-weight: 400px; */
+    /* font-size: 30px; */
+}
+
+#nav-right {
+    text-decoration: none;
+}
+.container {
+    width: 100vw; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    background-color: #303030;
+}
+.head-1 {
+    padding-top: 1.5rem;
+    padding-left: 45%;
+    color: gold;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ h2{
+    text-shadow:  #F18743 2px 2px 2px;
+}
+a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    text-transform: uppercase;
+    transition: all 250ms ease-in-out;
+}
+
+.container img {
+    border: 5px solid gold;
+    border-radius: 10px;
+    /* padding: 10px; */
+    /* margin-left: 50px; */
+}
+
+#sukkas {
+   justify-content: center;
+   
+}
+#shevuas {
+    justify-content: center;
+    padding: 2.5rem;
+}
+#even-hapina {
+    justify-content: center;
+    padding: 2.5rem;
+}
+.head-3{
+padding-left: 40%;
+color: gold;
+font-weight: 600;
+font-size: 50px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#jobs {
+    justify-content: center;
+    padding: 2.5rem;
+}
+.head-2 {
+    padding-left: 45%;
+    color: gold;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.head-4 {
+    padding-left: 40%;
+    color: gold;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+}
+footer {
+    font-size: 40px;
+    color: white;
+    font-weight: 400;
+    background-color: #303030;
+}
+
+.footer {
+    display: inline-flex;
+    align-items: center;
+    width: 100vw;
+    height: 250px;
+}
+
+footer a {
+    background-color: #303030;
+
+}
+
+footer h2 {
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 500px;
+}
+
+#fb:hover,
+:focus {
+    transform: translateY(-10px);
+    background-color: #303030;
+}
+
+#tw:hover,
+:focus {
+    transform: translateY(-10px);
+    background-color: #303030;
+}
+
+#ig:hover,
+:focus {
+    transform: translateY(-10px);
+    background-color: #303030;
+}
+
+#yt:hover,
+:focus {
+    transform: translateY(-10px);
+    background-color: #303030;
+    border-color: #303030;
+} 
+
+a img {
+    margin: 15px 15px;
+}
+
+#follow {
+    display: inline-flex;
+    padding-right: 700px;
+}
+
+.copy {
+    width: 100vw;
+    background-color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    word-spacing: 5px;
+}
+
+.copy img {
+    margin: 10px 10px;
+    width: 25px;
+    height: 25px;
+}
+
+#copyright {
+    font-size: 15px;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    color: #6E6E73;
+}
+
+.footer2 {
+    display: inline-flex;
+    list-style: none;
+    height: 200px;
+    width: 100vw;
+    padding-left: 500px;
+}
+
+.footer2 li a {
+    margin: 5px 20px;
+    font-size: 20px;
+    color: white;
+    border: solid 8px #303030;
+    transition: all 250ms ease-in-out;
+}
+
+.footer2 li a:hover {
+    color: white;
+    border: solid 8px #F87431;
+    border-radius: 35px;
+    background-color: #F87431;
+}
+
+hr {
+    margin-left: 200px;
+    opacity: 0.3;
+    justify-content: center;
+}

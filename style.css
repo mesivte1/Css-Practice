@@ -1,6 +1,5 @@
 * {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    /* background-color: #1e2352cc; */
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -12,41 +11,41 @@ body {
 
 .head {
     background-color: #303030;
-
+    height: 125px;
 }
 
 .head h2 {
     font-size: 40px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #F87431 ;
+    color: #F87431;
     text-align: center;
+    padding: 1.7rem;
 }
 
 h1 {
     font-size: 3.5rem;
-    /* padding-left: 2.5rem; */
     margin: 0;
-    color: yellow;
-
 }
 
-h1 :hover,
-:focus {
-    color: darkgoldenrod;
+h1 a :hover,
+ :focus
+ {
+    background-color: #F87431;
+    border: solid 8px #F87431;
 }
 
 a {
     text-decoration: none;
     color: black;
     background-color: white;
-    text-transform: uppercase;
     transition: all 250ms ease-in-out;
 }
 
 nav {
     width: 100vw;
+    height: 50px;
     margin: 0;
-    padding: 0;
+    padding: 3rem;
     display: inline-flex;
     flex-direction: row;
     align-items: center;
@@ -54,19 +53,22 @@ nav {
     background-color: white;
     font-weight: 400;
     font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 0; 
 }
 
-header {
+header{
     position: sticky;
     top: 0px;
-}
+} 
 
 nav a {
     border: solid 8px white;
 }
 
 nav a:hover,
-:focus {
+ :focus{
     /* text-decoration: none; */
     /* list-style: none; */
     color: white;
@@ -82,14 +84,179 @@ nav a:hover,
     text-decoration: none;
 }
 
-.even {
+.banner-1, .banner-2, .banner-3, .banner-4 {
     width: 1920px;
     height: 1000px;
     background-size: 1920px 1080px;
-    background-repeat: no-repeat;
-    animation: slidin 50s linear infinite;
+    position: absolute; 
+    left: 0; 
+    top: 25%;   
+    /* background-repeat: no-repeat; */
+    /* animation: slidin 50s infinite; */
 }
-div h3 {
+.banner-1 img {
+    position: absolute;
+    left: 50%;
+    top: 50%; 
+    transform: translate(-50%, -50%);
+    /* animation: zoom-out 5s linear infinite;  */
+}
+.banner-2 img {
+    position: absolute;
+    left: 50%;
+    top: 50%; 
+    transform: translate(-50%, -50%);
+    /* animation: zoom-out 5s linear infinite;  */
+}
+.banner-3 img {
+    position: absolute;
+    left: 50%;
+    top: 50%; 
+    transform: translate(-50%, -50%);
+    /* animation: zoom-out 5s linear infinite;  */
+}
+.banner-4 img {
+    position: absolute;
+    left: 50%;
+    top: 50%; 
+    transform: translate(-50%, -50%);
+}
+.text-box {
+    width: 600px;
+    height: 200px;
+    border-radius: 10px;
+    padding-left: 1.5rem;
+    font-size: 25px; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* text-align: center; */
+    line-height: 1.5;
+    box-shadow: 6px 6px 6px #F18743;
+    text-shadow: #F18743 2px 2px 2px;
+    position: absolute;
+    top: 600px;
+    left: 100px;
+    color:   #303030;
+    background-color: white;
+    animation: textup 24s linear infinite;
+    transform: translateY(100px);
+}
+.text-box h2 {
+    text-shadow: gray 2px 2px 2px;
+    font-family: 'League Spartan';
+    font-size: 40px;
+    /* margin-bottom: 40px; */
+    color: goldenrod;
+    line-height: 1.75; 
+}
+.text-box span {
+    background-color: #303030;
+    height: 1px;
+    width: 175px;
+    position: absolute;
+    line-height: 1;
+}
+@keyframes textup{
+    10%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.text-box-1{
+    animation-delay: 0s;
+}
+.text-box-2{
+    animation-delay: 6s;
+}
+.text-box-3{
+    animation-delay: 12s;
+}
+.text-box-4{
+    animation-delay: 18s;
+}
+
+.banner-1 {
+    animation: slide1 24s linear infinite;
+}
+.banner-2 {
+    animation: slide2 24s linear infinite;
+}
+.banner-3 {
+    animation: slide3 24s linear infinite;
+}
+.banner-4 {
+    animation: slide4 24s linear infinite;
+}
+@keyframes slide1{
+    0%{
+        visibility: visible;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+@keyframes slide2{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: visible;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+@keyframes slide3{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: visible;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+@keyframes slide4{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+/* div h3 {
     position: absolute;
     top: 950px;
     left: 50px;
@@ -102,9 +269,9 @@ div h3 {
     border-radius: 5px;
     color: #F87431;
     background-color: #303030;
-}  
+}   */
 
-@keyframes slidin {
+/* @keyframes slidin {
     0% {
         background-image: url('./even-hapina.jpg');
     }
@@ -129,40 +296,43 @@ div h3 {
     100% {
         background-image: url('./even-hapina-7.JPG');
     }
+} */
+.paragraph-display{
+    display: block;
+    flex-direction: column;
+    columns: 2;
+    padding-top: 60%; 
+    justify-content: center;
 }
-
-h2 {
-    /* width: 50vh; */
+.paragraph-1, .paragraph-2{
+    margin: 5.5rem auto; 
+    box-shadow: cyan 4px 5px 8px;
+}
+.paragraph-2{
+    padding: 4.4rem;
+}
+ section h2 {
+     display: inline-flex; 
+     width: 100%;
+     justify-content: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: goldenrod;
-    line-height: 3.5;
-    /* padding-left: 7.2rem;  */
-    /* justify-content: center; */
-    /* align-items: center; */
-    font-size: 60px;
-}
-
-.sec1 {
-    padding-left: 3.5rem;
-}
-
+    color: #F87431 ;
+    font-size: 40px;
+} 
 section p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    width: 40%;
-    height: 450px;
+    width: 500px; 
+    height: 500px; 
+    padding: 2.5rem;
     color: goldenrod;
     line-height: 1.5;
     text-align: center;
-    /* text-justify: auto; */
     font-size: 20px;
-    padding: 6rem;
-    border: 5px solid brown;
+    border: 5px solid #303030;
     border-radius: 10px;
     font-size: 25px;
-    /* padding-left: 15rem; */
-    /* justify-content: center;   */
-    /* align-content: center;  */
-    align-items: center;
+    justify-content: center;   
+    
 }
 
 .bottom {
@@ -182,6 +352,8 @@ section p {
 
 .bottom a {
     background-color: #F87431;
+    border: 8px solid #F87431;
+    color: #303030;
 }
 
 .bottom :hover {
@@ -218,27 +390,28 @@ footer h2 {
 
 #fb:hover,
 :focus {
-    transform: translateY(-20px);
-
+    transform: translateY(-10px);
+    background-color: #303030;
 }
 
 #tw:hover,
 :focus {
     transform: translateY(-10px);
-
+    background-color: #303030;
 }
 
 #ig:hover,
 :focus {
     transform: translateY(-10px);
-
+    background-color: #303030;
 }
 
 #yt:hover,
 :focus {
     transform: translateY(-10px);
-
-}
+    background-color: #303030;
+    border-color: #303030;
+} 
 
 a img {
     margin: 15px 15px;
@@ -278,7 +451,7 @@ a img {
     list-style: none;
     height: 200px;
     width: 100%;
-    padding-left: 700px;
+    padding-left: 500px;
 }
 
 .footer2 li a {
@@ -291,9 +464,9 @@ a img {
 
 .footer2 li a:hover {
     color: white;
-    border: solid 8px goldenrod;
+    border: solid 8px #F87431;
     border-radius: 35px;
-    background-color: goldenrod;
+    background-color: #F87431;
 }
 
 hr {
