@@ -1,36 +1,269 @@
 * {
     box-sizing: border-box;
-    margin: 0;
+     margin: 0;
     padding: 0;
+} 
+
+.head {
+    background-color: #303030;
+    height: 125px;
+    width: 100%;
 }
-.headback {
-    color: yellow;
-    padding-left: 40%;
-    background-color: black;
-    height: 100px;
+
+.head h2 {
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #F87431;
+    text-align: center;
+    padding: 1.7rem;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+h1 a :hover,
+ :focus
+ {
+    background-color: #F87431;
+    border: solid 8px #F87431;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    transition: all 250ms ease-in-out;
+}
+
+nav {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100vw;
+    height: 50px;
+    margin: 0;
+    padding: 3rem;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    font-weight: 500;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: #303030 10px 10px 8px;
+}
+
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+} 
+#contact-id{
+    color: white;
+    border: solid 8px #F87431;
+    border-radius: 35px;
+    background-color: #F87431;
+}
+nav a {
+    border: solid 8px white;
+    font-weight: 500;
+}
+
+nav a:hover,
+ :focus{
+    /* text-decoration: none; */
+    /* list-style: none; */
+    color: white;
+    border: solid 8px #F87431;
+    border-radius: 35px;
+    background-color: #F87431;
+    /* font-size: 35px; */
+    /* font-weight: 400px; */
+    /* font-size: 30px; */
+}
+
+#nav-right {
+    text-decoration: none;
+}
+
+.contact {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-around;
+    margin-left: 20%;
+    padding: 4rem;
+    /* animation: contact 15s ease-in-out infinite;
+    transform: translateX(100px); */
+    /* width: 100%; */
+    
+ } 
+ .address {
+    box-shadow: #F87431 10px 10px 8px;
+    display: inline-flex;
+    padding-top: 3.5rem;
+    margin: 2.5rem;
+    align-items:initial; 
+    font-size: 25px;
+    width: 450px;
+    height: 160px; 
+    color: #303030;
+    font-weight: 500;
+    justify-content:left; 
+    animation: contact 15s linear forwards; 
+    transform: translateX(150px); 
+ }
+ .addText h3{
+    color: #F87431;
+ }
+ @keyframes contact{
+    10%{
+        transform: translateX(0px);
+    }
+    
+     100%{
+        transform: translateX(0px);
+    } 
+ }
+.phone {
+    box-shadow: #F87431 10px 10px 8px;
+    display: inline-flex;
+    padding-top: 2.5rem;
+    margin: 2.5rem;
+    align-items: start; 
+    font-size: 25px;
+    width: 450px;
+    height: 160px; 
+    color: #303030;
+    font-weight: 500;
+    animation: contact 15s linear forwards; 
+    transform: translateX(150px); 
+}
+.email {
+    box-shadow: #F87431 10px 10px 8px;
+    display: inline-flex;
+    padding: 0.3rem;
+    margin: 2.5rem;
+    align-items: start; 
+    font-size: 25px;
+    width: 450px;
+    height: 160px; 
+    color: #303030;
+    font-weight: 500;
+    animation: contact 15s linear forwards; 
+    transform: translateX(150px); 
+}
+footer {
+    font-size: 40px;
+    color: white;
+    font-weight: 400;
+    background-color: #303030;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.footer {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    height: 250px;
 
 }
-h1 {
-    padding-top: 2rem;
+
+footer a {
+    background-color: #303030;
+
 }
-.back1 {
-    height: 837px;
-    color: gold;
-    background-color: #152c75;
+
+footer h2 {
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 500px;
 }
-.contact {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 20%;
-    
+
+#fb:hover,
+:focus {
+    transform: translateY(-10px);
+    background-color: #303030;
 }
-h2 {
-    
-    font-size: 50px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+#tw:hover,
+:focus {
+    transform: translateY(-10px);
+    background-color: #303030;
 }
-a {
-    color: yellow;
-    font-size: 35px;
-    padding-left: 1.5rem;
+
+#ig:hover,
+:focus {
+    transform: translateY(-10px);
+    background-color: #303030;
+}
+
+#yt:hover,
+:focus {
+    transform: translateY(-10px);
+    background-color: #303030;
+    border-color: #303030;
+} 
+
+a img {
+    margin: 15px 15px;
+}
+
+#follow {
+    display: inline-flex;
+    padding-right: 700px;
+}
+
+.copy {
+    width: 100%;
+    background-color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    word-spacing: 5px;
+}
+
+.copy img {
+    margin: 10px 10px;
+    width: 25px;
+    height: 25px;
+}
+
+#copyright {
+    font-size: 15px;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    color: #6E6E73;
+}
+
+.footer2 {
+    display: inline-flex;
+    list-style: none;
+    height: 200px;
+    width: 100%;
+    padding-left: 500px;
+}
+
+.footer2 li a {
+    margin: 5px 20px;
+    font-size: 20px;
+    color: white;
+    border: solid 8px #303030;
+    transition: all 250ms ease-in-out;
+}
+
+.footer2 li a:hover {
+    color: white;
+    border: solid 8px #F87431;
+    border-radius: 35px;
+    background-color: #F87431;
+}
+
+hr {
+    margin-left: 200px;
+    opacity: 0.3;
+    justify-content: center;
 }
